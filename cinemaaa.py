@@ -1,3 +1,5 @@
+import random
+
 print("=🎥=CINEMA=🍿=")
 
 while True:
@@ -13,10 +15,12 @@ while True:
         print("Sessão de Segunda a Domingo")
         semana = input("Escolha o dia da semana: ")
         
-        print("--------------------------") #cadeira
+        print("--------------------------") #quantidade
+        
+        ingressoTotal = 20
         ingresso1 = int(input("Quantidades de ingressos: "))
         if ingresso1 > 0 and ingresso1 <= 20:
-            20 -= ingresso1
+            ingressoTotal -= ingresso1
             
         print("--------------------------") #cadeira
         
@@ -26,7 +30,7 @@ while True:
         print("C1 | C2 | C3 | C4 | C5")
         print("D1 | D2 | D3 | D4 | D5")
         print("E1 | E2 | E3 | E4 | E5")
-        cadeira = input("Selecione sua cadeira: ")
+        cadeira = input("Selecione sua(s) cadeira(s): ")
         
         print("--------------------------") #ingresso meia ou inteira
         
@@ -39,7 +43,7 @@ while True:
         
         print("1- Pix")
         print("2- Cartão")
-        pagamento = input("Escolha o tipo de pagamento: ")
+        pagamento = int(input("Escolha o tipo de pagamento: "))
         if pagamento == 1:
             nome = input("Digite seu nome: ") 
             print("Código pix: jwu7dgt39elk2y9876r")
@@ -53,18 +57,15 @@ while True:
             
         print("--------------------------") #ingresso
         
-        print("INGRESSO")
+        numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+        sorteio = random.choice(numeros)
+        
+        print("🎟️INGRESSO🎟️")
         print(f"{nome}")
-        print(f"{nome}")
-        
+        print("Vingadores: Doutor Destino | 165 minutos")
+        print(f"Cadeira:{cadeira} | Nº: {sorteio}")
+        break
                 
-
-                
-        
-       
-       
-        
-        
         
         
         
