@@ -84,13 +84,13 @@ while True:
         print("Vingadores: Doutor Destino | 165 minutos")
         print(f"Sessão às 20:00 Cadeira:{cadeira} |Nº: {sorteio}")
         pergunta = input("Deseja adquirir outro ingresso?(Y/N): ")
-        if pergunta == "Y" and pergunta == "y":
+        if pergunta == "Y" or pergunta == "y":
             filme = int(input("Escolha um filme: "))
-        elif pergunta == "N" and pergunta == "n":
+        elif pergunta == "N" or pergunta == "n":
             print("Obrigao pela escolha!")
                     
         else:
-            ("Não é uma opção")
+            print("Não é uma opção")
             filme = int(input("Escolha um filme: "))
         print("--------------------------")
         
@@ -171,13 +171,13 @@ while True:
         print("Os Farofeiros 3 | 102 minutos")
         print(f"Sessão às 16:00 Cadeira:{cadeira} |Nº: {sorteio}")
         pergunta = input("Deseja adquirir outro ingresso?(Y/N): ")
-        if pergunta == "Y" and pergunta == "y":
+        if pergunta == "Y" or pergunta == "y":
             filme = int(input("Escolha um filme: "))
-        elif pergunta == "N" and pergunta == "n":
+        elif pergunta == "N" or pergunta == "n":
             print("Obrigao pela escolha!")
                     
         else:
-            ("Não é uma opção")
+            print("Não é uma opção")
             filme = int(input("Escolha um filme: "))
         print("--------------------------")
         
@@ -255,15 +255,15 @@ while True:
         print("🎟️INGRESSO🎟️")
         print(f"{nome}")
         print("O Gatola Da Cartola | 114 minutos")
-        print(f"Sessão às 16:00 Cadeira:{cadeira} |Nº: {sorteio}")
+        print(f"Sessão às 13:00 Cadeira:{cadeira} |Nº: {sorteio}")
         pergunta = input("Deseja adquirir outro ingresso?(Y/N): ")
-        if pergunta == "Y" and pergunta == "y":
+        if pergunta == "Y" or pergunta == "y":
             filme = int(input("Escolha um filme: "))
-        elif pergunta == "N" and pergunta == "n":
+        elif pergunta == "N" or pergunta == "n":
             print("Obrigao pela escolha!")
             break
                     
         else:
-            ("Não é uma opção")
+            print("Não é uma opção")
             filme = int(input("Escolha um filme: "))
         print("--------------------------")
